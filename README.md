@@ -141,7 +141,9 @@ NBSintaxParser_feedStart(&parser, &config);
 
 # Implementations
 
-This parser is in use for C and C++ code validation and refactoring. It is intended to be used to automatize the generation of glue layers for [sys-nbframework-src](https://github.com/marcosjom/sys-nbframework-src); to allow the use of this framework from other programming languages.
+This parser is in use for C and C++ code validation and refactoring.
+
+It is intended to be used to automatize the generation of glue layers for [sys-nbframework-src](https://github.com/marcosjom/sys-nbframework-src) and to allow the use of this framework from other programming languages. Also to add support for scripting languages someday.
 
 # Contact
 
