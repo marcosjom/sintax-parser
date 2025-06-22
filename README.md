@@ -100,7 +100,7 @@ callbacks.errorFound = myErrorFoundFunc;
 NBSintaxParser_setCallbacks(&parser, &callbacks);
 ```
 
-Deifne the root rules you are parsing, and start feeding the code to be parsed:
+Define the root rules you are parsing, and start feeding the code to be parsed:
 
 ```
 //
@@ -137,7 +137,11 @@ NBSintaxParser_feedStart(&parser, &config);
 ...
 ```
 
-.. which could be the first step to build a C99 compiler.
+... which could be the first step to build a C99 compiler.
+
+# Implementations
+
+This parser is in use for C and C++ code validation and refactoring. It is intended to be used to automatize the generation of glue layers for [sys-nbframework-src](https://github.com/marcosjom/sys-nbframework-src); to allow the use of this framework from other programming languages.
 
 # Contact
 
