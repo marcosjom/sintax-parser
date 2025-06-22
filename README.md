@@ -75,7 +75,9 @@ if(!NBSintaxParser_rulesFeed(&parser, rulesStr)){
 } else if(!NBSintaxParser_rulesFeedEnd(&parser)){
     //error
 } else {
-    //rules loaded, do next steps here
+    //rules loaded
+    //...do next steps here...
+    //...
 }
 NBSintaxParser_release(&parser);
 ```
@@ -89,15 +91,12 @@ NBSintaxParser_rulesConcatAsRulesInC(obj, "my_parser_of_C99TC3", dst);
 Once the rules are loaded you can configure your callbacks:
 
 ```
-STNBSintaxParserCallbacks callbacks;
-NBMemory_setZeroSt(callbacks, STNBSintaxParserCallbacks);
-
+STNBSintaxParserCallbacks callbacks = {};
 callbacks.userParam = myData;
 callbacks.validateElem = myValidateElemFunc;
 callbacks.consumeResults = myConsumeResultsFunc;
 callbacks.unconsumedChar = myUnconsumedCharFunc;
 callbacks.errorFound = myErrorFoundFunc;
-
 NBSintaxParser_setCallbacks(&parser, &callbacks);
 ```
 
@@ -108,12 +107,10 @@ Deifne the root rules you are parsing, and start feeding the code to be parsed:
 //Define the root rules I will be feeding
 //
 const char* rootElems[] = { "constant-expression" };
-STNBSintaxParserConfig config;
-NBMemory_setZeroSt(config, STNBSintaxParserConfig);
+STNBSintaxParserConfig config = {};
 config.rootElems    = rootElems;
 config.rootElemsSz  = (sizeof(rootElems) / sizeof(rootElems[0]));
 config.resultsMode  = ENSintaxParserResultsMode_LongestsPerRootChildElem;
-config.resultsKeepHistory = TRUE; //Necesary when reading results without callback
 NBSintaxParser_feedStart(&parser, &config);
 
 //
@@ -125,19 +122,17 @@ NBSintaxParser_feedBytes(&parser, data, dataSz);
 ...
 ```
 
-As a specific example, this will be parse the C99 pre-processor rules:
+As a specific example, these roots will be parsing the C99 pre-processor rules:
 
 ```
 //
 //Define the root rules I will be feeding
 //
 const char* rootElems[] = { "if-group", "elif-group", "else-group", "endif-line", "control-line" };
-STNBSintaxParserConfig config;
-NBMemory_setZeroSt(config, STNBSintaxParserConfig);
+STNBSintaxParserConfig config; = {};
 config.rootElems    = rootElems;
 config.rootElemsSz  = (sizeof(rootElems) / sizeof(rootElems[0]));
 config.resultsMode  = ENSintaxParserResultsMode_LongestsPerRootChildElem;
-config.resultsKeepHistory = TRUE; //Necesary when reading results without callback
 NBSintaxParser_feedStart(&parser, &config);
 ...
 ```
