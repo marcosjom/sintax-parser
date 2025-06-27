@@ -21,7 +21,10 @@ Get the sintax specifications: https://www.open-std.org/jtc1/sc22/WG14/www/docs/
 
 Create a text file or string with the sintax rules separated by empty lines.
 
-Note that Literal values are expressed between brackets.
+Note that:
+- literal values are expressed between square-brackets.
+- optional elements ends with "(opt)"
+- and "(callback)" tells the parser to call your program to validate that element.
 
 ```
 initializer-list:
@@ -39,6 +42,14 @@ primary-expression:
 identifier
 constant
 string-literal
+
+...
+
+c-char:
+(callback)
+//any member of the source character set except
+//the single-quote ', backslash \, or new-line character
+escape-sequence
 
 ...
 
