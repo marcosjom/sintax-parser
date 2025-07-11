@@ -1,5 +1,5 @@
 #include "nb/NBFrameworkPch.h"
-#include "nb/core/NBSintaxParserRules.h"
+#include "nb/sintax/NBSintaxParserRules.h"
 //
 #include "nb/core/NBMemory.h"
 #include "nb/core/NBArray.h"

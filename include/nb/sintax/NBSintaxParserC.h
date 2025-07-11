@@ -5,11 +5,11 @@
 //
 #include "nb/core/NBArray.h"
 #include "nb/core/NBArraySorted.h"
-#include "nb/core/NBSintaxParser.h"
+#include "nb/sintax/NBSintaxParser.h"
 //
-#include "nb/core/NBSintaxParserCTokens.h"
-#include "nb/core/NBSintaxParserCDefs.h"
-#include "nb/core/NBSintaxParserCPProc.h"
+#include "nb/sintax/NBSintaxParserCTokens.h"
+#include "nb/sintax/NBSintaxParserCDefs.h"
+#include "nb/sintax/NBSintaxParserCPProc.h"
 
 #ifdef __cplusplus
 extern "C" {

@@ -3,7 +3,7 @@
 
 #include "nb/NBFrameworkDefs.h"
 #include "nb/core/NBString.h"
-#include "nb/core/NBSintaxParserDefs.h"
+#include "nb/sintax/NBSintaxParserDefs.h"
 //
 #ifdef __cplusplus
 extern "C" {

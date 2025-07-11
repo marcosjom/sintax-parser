@@ -4,10 +4,10 @@
 #include "nb/NBFrameworkDefs.h"
 //
 #include "nb/core/NBArray.h"
-#include "nb/core/NBSintaxParser.h"
+#include "nb/sintax/NBSintaxParser.h"
 //
-#include "nb/core/NBSintaxParserCDefs.h"
-#include "nb/core/NBSintaxParserResults.h"
+#include "nb/sintax/NBSintaxParserCDefs.h"
+#include "nb/sintax/NBSintaxParserResults.h"
 
 #ifdef __cplusplus
 extern "C" {

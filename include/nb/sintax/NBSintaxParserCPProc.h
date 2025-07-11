@@ -5,13 +5,13 @@
 //
 #include "nb/core/NBArray.h"
 #include "nb/core/NBArraySorted.h"
-#include "nb/core/NBSintaxParser.h"
+#include "nb/sintax/NBSintaxParser.h"
 #include "nb/core/NBRange.h"
 //
-#include "nb/core/NBSintaxParserCDefs.h"
-#include "nb/core/NBSintaxParserCTokens.h"
-#include "nb/core/NBSintaxParserCPProcDefs.h"
-#include "nb/core/NBSintaxParserCPProcUnit.h"
+#include "nb/sintax/NBSintaxParserCDefs.h"
+#include "nb/sintax/NBSintaxParserCTokens.h"
+#include "nb/sintax/NBSintaxParserCPProcDefs.h"
+#include "nb/sintax/NBSintaxParserCPProcUnit.h"
 
 #ifdef __cplusplus
 extern "C" {

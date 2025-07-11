@@ -5,7 +5,7 @@
 #include "nb/core/NBString.h"
 #include "nb/core/NBArray.h"
 #include "nb/core/NBArraySorted.h"
-#include "nb/core/NBSintaxParserDefs.h"
+#include "nb/sintax/NBSintaxParserDefs.h"
 //
 #ifdef __cplusplus
 extern "C" {

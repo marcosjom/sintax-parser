@@ -1,5 +1,5 @@
 #include "nb/NBFrameworkPch.h"
-#include "nb/core/NBSintaxParserCDefs.h"
+#include "nb/sintax/NBSintaxParserCDefs.h"
 //
 
 //C99_TC3: http://www.open-std.org/jtc1/sc22/WG14/www/docs/n1256.pdf

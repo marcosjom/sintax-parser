@@ -5,9 +5,9 @@
 //
 #include "nb/core/NBArray.h"
 #include "nb/core/NBArraySorted.h"
-#include "nb/core/NBSintaxParserDefs.h"
-#include "nb/core/NBSintaxParserRules.h"
-#include "nb/core/NBSintaxParserResults.h"
+#include "nb/sintax/NBSintaxParserDefs.h"
+#include "nb/sintax/NBSintaxParserRules.h"
+#include "nb/sintax/NBSintaxParserResults.h"
 
 #ifdef __cplusplus
 extern "C" {
